@@ -30,6 +30,8 @@ namespace Asp.net_Identity
                     .AddEntityFrameworkStores< ApplicationDBContext>()
                     .AddDefaultTokenProviders();
             services.AddMvc(opt => opt.EnableEndpointRouting = false);
+
+            //services.ConfigureApplicationCookie(opt => opt.LoginPath = "");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
